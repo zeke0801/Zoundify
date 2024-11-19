@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-spotify-black text-spotify-white;
+  }
+}
+
+@layer components {
+  .sidebar-icon {
+    @apply h-6 w-6;
+  }
+  
+  .btn {
+    @apply px-4 py-2 rounded-full font-bold;
+  }
+  
+  .btn-primary {
+    @apply bg-spotify-green text-spotify-white hover:scale-105 transition-transform;
+  }
+  
+  .btn-secondary {
+    @apply bg-spotify-gray text-spotify-white hover:bg-opacity-80;
+  }
+}
